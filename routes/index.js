@@ -9,4 +9,8 @@ router.get('/', homeController.home);
 
 router.get('/practice', pracController.prac);
 
+router.use('/user', require('./user'));
+
+router.use('/posts', require('./posts'));
+
 module.exports = router;
